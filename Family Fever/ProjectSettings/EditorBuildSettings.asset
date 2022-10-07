@@ -8,4 +8,49 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Family1.unity
+    guid: 8fa5835f3dfb5e84fb9aab060cae73de
+  - enabled: 1
+    path: Assets/Scenes/Family2.unity
+    guid: 9a6a993817bb73e449a26eff4b60e753
+  - enabled: 1
+    path: Assets/Scenes/Target.unity
+    guid: 7d7ecef5c38298e4f94eb1d2f8192823
+  - enabled: 1
+    path: Assets/Scenes/1X Screen.unity
+    guid: a6d52d97821a3934fa6cfaee5688e5a6
+  - enabled: 1
+    path: Assets/Scenes/2X Screen.unity
+    guid: 248233f0e00abd24390ba34212d70d24
+  - enabled: 1
+    path: Assets/Scenes/3X Screen.unity
+    guid: f9f2587a33bec404e8ff5c231faaf8a4
+  - enabled: 1
+    path: Assets/Scenes/Double Screen 1.unity
+    guid: 452b76669edd65b4ea5e008b5b09b42e
+  - enabled: 1
+    path: Assets/Scenes/Triple Screen.unity
+    guid: 682656a9cdbef66438eb46f70f0a76ec
+  - enabled: 1
+    path: Assets/Scenes/Family1 Steve.unity
+    guid: 8a2f277d6834bb240aa43159cd269ba3
+  - enabled: 1
+    path: Assets/Scenes/Family2 Steve.unity
+    guid: 6640db96048b188459232026a567d8ff
+  - enabled: 1
+    path: Assets/Scenes/AnswerBoard.unity
+    guid: 7b1e39440db07644885ff79512b867bf
+  - enabled: 1
+    path: Assets/Scenes/Family1 Clap.unity
+    guid: 74f8a76434f1b6b4eb1e2cac690d70f2
+  - enabled: 1
+    path: Assets/Scenes/Family2 Clap.unity
+    guid: 0f1f40cd7a29752438e8eb7e5d997e02
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 372c964f794587a4ba66e8f2becf93c2
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: d36fd37f655db014ca30be302e510dcf
   m_configObjects: {}
