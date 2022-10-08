@@ -11,8 +11,18 @@ public class ButtonManager : MonoBehaviour
         
     }
     
-     public void OnButtonPress()
+     public void firstButton()
      {
         SceneManager.LoadScene(1);
      }
+
+    public void fam1NameButton()
+    {
+        SceneManager.LoadScene(16);
+    }
+
+    public void fam2NameButton()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
