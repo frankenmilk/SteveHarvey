@@ -19,6 +19,7 @@ public class QuestionsHolder : MonoBehaviour
         TextChange();
     }
 
+    // Changes the displayed question based on QuestionNum which is held in ValueStorage
     public void TextChange()
     {
         if(ValueStorage.QuestionNum == 1)
@@ -26,6 +27,36 @@ public class QuestionsHolder : MonoBehaviour
             Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
             DisplayText.text = Question1;
         }
-        
+
+        if (ValueStorage.QuestionNum == 2)
+        {
+            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            DisplayText.text = Question2;
+        }
+
+        if (ValueStorage.QuestionNum == 3)
+        {
+            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            DisplayText.text = Question3;
+        }
+
+        if (ValueStorage.QuestionNum == 4)
+        {
+            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            DisplayText.text = Question4;
+        }
+
+        if (ValueStorage.QuestionNum == 5)
+        {
+            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            DisplayText.text = Question5;
+        }
+
+        if (ValueStorage.QuestionNum == 6)
+        {
+            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
+            DisplayText.text = Question6;
+        }
+
     }
 }
