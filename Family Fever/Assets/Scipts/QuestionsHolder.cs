@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine
+using UnityEngine.SceneManagement;
 
 public class QuestionsHolder : MonoBehaviour
 {
@@ -31,51 +31,196 @@ public class QuestionsHolder : MonoBehaviour
             Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
             DisplayText.text = Question1;
 
-            Answer = input.inputString;
+            Answer = Input.inputString;
 
-            if(string.Compare(answer, "skeleton") == 0)
+            if (ValueStorage.Player1Turn == true)
             {
-                
-            }
-            else if (string.Compare(answer, "shotgun") == 0)
-            {
-                (change scene to either win or x screen(no xs))
+                if (string.Compare(answer, "skeleton") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "suit") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "dress") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "jewelry") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "shotgun") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (Xcount == 0)
+                    {
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (Xcount == 1)
+                    {
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (Xcount == 2)
+                    {
+                        SceneManager.LoadScene(6);
+                    }
+                }
             }
             else
             {
-                (change scene to x screen)
+                if (string.Compare(answer, "skeleton") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "suit") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "dress") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "jewelry") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "shotgun") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (Xcount1 == 0)
+                    {
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (Xcount1 == 1)
+                    {
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (Xcount1 == 2)
+                    {
+                        SceneManager.LoadScene(6);
+                    }
+                }
             }
-
         }
-
-        if (ValueStorage.QuestionNum == 2)
-        {
-            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            DisplayText.text = Question2;
-        }
+            
 
         if (ValueStorage.QuestionNum == 3)
         {
             Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            DisplayText.text = Question3;
-        }
+            DisplayText.text = Question2;
 
-        if (ValueStorage.QuestionNum == 4)
-        {
-            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            DisplayText.text = Question4;
-        }
+            Answer = Input.inputString;
 
-        if (ValueStorage.QuestionNum == 5)
-        {
-            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            DisplayText.text = Question5;
-        }
-
-        if (ValueStorage.QuestionNum == 6)
-        {
-            Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
-            DisplayText.text = Question6;
+            if (ValueStorage.Player1Turn == true)
+            {
+                if (string.Compare(answer, "legs") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "lips") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "lungs") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "liver") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "lateral cuneiform bone") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (Xcount == 0)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (Xcount == 1)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (Xcount == 2)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(6);
+                    }
+                }
+            }
+            else
+            {
+                if (string.Compare(answer, "legs") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "lips") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "lungs") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "liver") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(answer, "lateral cuneiform bone") == 0)
+                {
+                    ValueStorage.Points += 1;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (Xcount == 0)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (Xcount == 1)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (Xcount == 2)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(6);
+                    }
+                }
+            }
         }
 
     }
