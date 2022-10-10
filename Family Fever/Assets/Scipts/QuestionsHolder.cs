@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine
 
 public class QuestionsHolder : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class QuestionsHolder : MonoBehaviour
     public string Question4 = "Name something people win on game shows?";
     public string Question5 = "Name something you have more of than Steve Harvey?";
     public string Question6 = "Name something a burglar wouldn't want to see when they break into a house";
+
+    string Answer;
+    
 
 
     public void Start()
@@ -26,6 +30,22 @@ public class QuestionsHolder : MonoBehaviour
         {
             Text DisplayText = GameObject.Find("Canvas/Text").GetComponent<Text>();
             DisplayText.text = Question1;
+
+            Answer = input.inputString;
+
+            if(string.Compare(answer, "skeleton") == 0)
+            {
+                
+            }
+            else if (string.Compare(answer, "shotgun") == 0)
+            {
+                (change scene to either win or x screen(no xs))
+            }
+            else
+            {
+                (change scene to x screen)
+            }
+
         }
 
         if (ValueStorage.QuestionNum == 2)
