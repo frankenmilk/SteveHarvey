@@ -7,13 +7,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Backslash))
+        if (Input.GetKeyDown(KeyCode.Backslash)) // player 2
         {
             ValueStorage.Player1Turn = false;
             ValueStorage.Player2Turn = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Tilde))
+        if (Input.GetKeyDown(KeyCode.Tilde)) // player 1
         {
             ValueStorage.Player2Turn = false;
             ValueStorage.Player1Turn = true;
