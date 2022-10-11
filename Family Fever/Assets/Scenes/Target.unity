@@ -683,7 +683,7 @@ Transform:
   m_LocalScale: {x: 4.9637966, y: 4.2761703, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &650506640
 GameObject:
@@ -814,7 +814,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &689400136
 MonoBehaviour:
@@ -839,7 +839,6 @@ GameObject:
   - component: {fileID: 886617168}
   - component: {fileID: 886617170}
   - component: {fileID: 886617169}
-  - component: {fileID: 886617171}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -908,26 +907,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886617167}
   m_CullTransparentMesh: 1
---- !u!114 &886617171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886617167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886baacfe9bd9d44ca794678db346c05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Question1: Name something in a person's closet that only comes out on special occasions?
-  Question2: In horror movies, name a place teenagers always go when there is a killer
-    on the loose?
-  Question3: 'Name the most useful body part that begins with the letter "L" '
-  Question4: Name something people win on game shows?
-  Question5: Name something you have more of than Steve Harvey?
-  Question6: Name something a burglar wouldn't want to see when they break into a
-    house
 --- !u!1 &1426260521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,57 +1068,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486617120}
   m_CullTransparentMesh: 1
---- !u!1 &1510008536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1510008538}
-  - component: {fileID: 1510008537}
-  m_Layer: 0
-  m_Name: QuestionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1510008537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510008536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886baacfe9bd9d44ca794678db346c05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Question1: Name something in a person's closet that only comes out on special occasions?
-  Question2: In horror movies, name a place teenagers always go when there is a killer
-    on the loose?
-  Question3: 'Name the most useful body part that begins with the letter "L" '
-  Question4: Name something people win on game shows?
-  Question5: Name something you have more of than Steve Harvey?
-  Question6: Name something a burglar wouldn't want to see when they break into a
-    house
---- !u!4 &1510008538
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510008536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831766503
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
             ValueStorage.Player2Turn = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Tilde)) // player 1
+        if (Input.GetKeyDown(KeyCode.BackQuote)) // player 1
         {
             ValueStorage.Player2Turn = false;
             ValueStorage.Player1Turn = true;

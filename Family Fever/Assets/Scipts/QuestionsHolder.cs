@@ -30,6 +30,19 @@ public class QuestionsHolder : MonoBehaviour
         Debug.Log(Answer);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.BackQuote))
+        {
+            Debug.Log("Bozo mode");
+            PlayerAnswer();
+        }
+        if (Input.GetKeyDown(KeyCode.Backslash))
+        { 
+            PlayerAnswer();
+        }
+    }
+
     public void DisplayQuestion()
     {
         if (ValueStorage.QuestionNum == 1)
@@ -81,14 +94,17 @@ public class QuestionsHolder : MonoBehaviour
                 {
                     if (ValueStorage.Xcount1 == 0)
                     {
+                        ValueStorage.Xcount1 += 1;
                         SceneManager.LoadScene(4); // x1 scene
                     }
                     else if (ValueStorage.Xcount1 == 1)
                     {
+                        ValueStorage.Xcount1 += 1;
                         SceneManager.LoadScene(5);
                     }
                     else if (ValueStorage.Xcount1 == 2)
                     {
+                        ValueStorage.Xcount1 += 1;
                         SceneManager.LoadScene(6);
                     }
                 }
@@ -125,14 +141,17 @@ public class QuestionsHolder : MonoBehaviour
                 {
                     if (ValueStorage.Xcount2 == 0)
                     {
+                        ValueStorage.Xcount2 += 1;
                         SceneManager.LoadScene(4); // x1 scene
                     }
                     else if (ValueStorage.Xcount2 == 1)
                     {
+                        ValueStorage.Xcount2 += 1;
                         SceneManager.LoadScene(5);
                     }
                     else if (ValueStorage.Xcount2 == 2)
                     {
+                        ValueStorage.Xcount2 += 1;
                         SceneManager.LoadScene(6);
                     }
                 }
@@ -166,7 +185,7 @@ public class QuestionsHolder : MonoBehaviour
                 }
                 else if (string.Compare(Answer, "lateral cuneiform bone") == 0)
                 {
-                    ValueStorage.Points1 += 1;
+                    ValueStorage.Points1 += 100000;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -188,7 +207,7 @@ public class QuestionsHolder : MonoBehaviour
                     }
                 }
             }
-            else // Player 2
+            else if (ValueStorage.Player2Turn == true) // Player 2
             {
                 if (string.Compare(Answer, "legs") == 0)
                 {
@@ -212,14 +231,14 @@ public class QuestionsHolder : MonoBehaviour
                 }
                 else if (string.Compare(Answer, "lateral cuneiform bone") == 0)
                 {
-                    ValueStorage.Points2 += 1;
+                    ValueStorage.Points2 += 100000;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
                 {
                     if (ValueStorage.Xcount2 == 0)
                     {
-                        ValueStorage.Xcount1 += 1;
+                        ValueStorage.Xcount2 += 1;
                         SceneManager.LoadScene(4); // x1 scene
                     }
                     else if (ValueStorage.Xcount2 == 1)
