@@ -24,6 +24,8 @@ public class Timer : MonoBehaviour
         {
             if(TimeValue <= 0)
             {
+                Debug.Log("Player 1 points: " + ValueStorage.Points1);
+                Debug.Log("Player 1 points: " + ValueStorage.Points2);
                 SceneManager.LoadScene(3);
             }
         }
