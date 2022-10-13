@@ -17,6 +17,25 @@ public class ValueStorage : MonoBehaviour
     public static int Xcount1;
     public static int Xcount2;
 
+    public static bool skeleton = false;
+    public static bool shotgun = false;
+    public static bool dress = false;
+    public static bool suit = false;
+    public static bool jewelry = false;
+
+    public static bool cabin = false;
+    public static bool graveyard = false;
+    public static bool basement = false;
+    public static bool closet = false;
+    public static bool shower = false;
+
+    public static bool legs = false;
+    public static bool lips = false;
+    public static bool lungs = false;
+    public static bool liver = false;
+    public static bool lCB = false;
+
+    public static bool hair = false;
     // Inteded use is to change the question based on the number
     // Number will be incremented based on answers correct or 3 wrong marks Ex: if ans = 5, ++QuestionNum.
     public static int QuestionNum = 1;
