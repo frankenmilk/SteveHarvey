@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class ValueStorage : MonoBehaviour
@@ -35,7 +36,25 @@ public class ValueStorage : MonoBehaviour
     public static bool liver = false;
     public static bool lCB = false;
 
+    public static bool money = false;
+    public static bool car = false;
+    public static bool vacations = false;
+    public static bool appliances = false;
+    public static bool dignity = false;
+
+
     public static bool hair = false;
+    public static bool friends = false;
+    public static bool personality = false;
+    public static bool height = false;
+    public static bool humor = false;
+
+    public static bool dog = false;
+    public static bool NakedGrandma = false;
+    public static bool EmptyHouse = false;
+    public static bool PoliceOfficer = false;
+    public static bool VideoCamera = false;
+
     // Inteded use is to change the question based on the number
     // Number will be incremented based on answers correct or 3 wrong marks Ex: if ans = 5, ++QuestionNum.
     public static int QuestionNum = 1;

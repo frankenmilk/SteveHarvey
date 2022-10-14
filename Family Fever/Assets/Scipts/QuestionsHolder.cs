@@ -11,8 +11,8 @@ public class QuestionsHolder : MonoBehaviour
     public string Question1 = "Name something in a person's closet that only comes out on special occasions?";
     public string Question2 = "In horror movies, name a place teenagers always go when there is a killer on the loose?";
     public string Question3 = "Name the most useful body part that begins with the letter \"L\" ";
-    public string Question5 = "Name something people win on game shows?";
     public string Question4 = "Name something you have more of than Steve Harvey?";
+    public string Question5 = "Name something people win on game shows?";
     public string Question6 = "Name something a burglar wouldn't want to see when they break into a house";
 
     private string Answer;
@@ -85,34 +85,34 @@ public class QuestionsHolder : MonoBehaviour
         {
             if (ValueStorage.Player1Turn == true)
             {
-                if (string.Compare(Answer, "skeleton") == 0 && skeleton == false)
+                if (string.Compare(Answer, "skeleton") == 0 && ValueStorage.skeleton == false)
                 {
                     ValueStorage.Points1 += 1;
-                    skeleton = true;
+                    ValueStorage.skeleton = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "suit") == 0 && suit == false)
+                else if (string.Compare(Answer, "suit") == 0 && ValueStorage.suit == false)
                 {
                     ValueStorage.Points1 += 1;
-                    suit = true;
+                    ValueStorage.suit = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "dress") == 0 && dress == false)
+                else if (string.Compare(Answer, "dress") == 0 && ValueStorage.dress == false)
                 {
                     ValueStorage.Points1 += 1;
-                    dress = true;
+                    ValueStorage.dress = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "jewelry") == 0 && jewelry == false)
+                else if (string.Compare(Answer, "jewelry") == 0 && ValueStorage.jewelry == false)
                 {
                     ValueStorage.Points1 += 1;
-                    jewelry = true;
+                    ValueStorage.jewelry = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "shotgun") == 0 && shotgun == false)
+                else if (string.Compare(Answer, "shotgun") == 0 && ValueStorage.shotgun == false)
                 {
                     ValueStorage.Points1 += 1;
-                    shotgun = true;
+                    ValueStorage.shotgun = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -136,34 +136,34 @@ public class QuestionsHolder : MonoBehaviour
             }
             else if (ValueStorage.Player2Turn == true) // Player 2
             {
-                if (string.Compare(Answer, "skeleton") == 0 && skeleton == false)
+                if (string.Compare(Answer, "skeleton") == 0 && ValueStorage.skeleton == false)
                 {
                     ValueStorage.Points2 += 1;
-                    skeleton = true;
+                    ValueStorage.skeleton = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "suit") == 0 && suit == false)
+                else if (string.Compare(Answer, "suit") == 0 && ValueStorage.suit == false)
                 {
                     ValueStorage.Points2 += 1;
-                    suit = true;
+                    ValueStorage.suit = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "dress") == 0 && dress == false)
+                else if (string.Compare(Answer, "dress") == 0 && ValueStorage.dress == false)
                 {
                     ValueStorage.Points2 += 1;
-                    dress = true;
+                    ValueStorage.dress = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "jewelry") == 0 && jewelry == false)
+                else if (string.Compare(Answer, "jewelry") == 0 && ValueStorage.jewelry == false)
                 {
                     ValueStorage.Points2 += 1;
-                    jewelry = true;
+                    ValueStorage.jewelry = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "shotgun") == 0 && shotgun == false)
+                else if (string.Compare(Answer, "shotgun") == 0 && ValueStorage.shotgun == false)
                 {
                     ValueStorage.Points2 += 1;
-                    shotgun = true;
+                    ValueStorage.shotgun = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -185,9 +185,9 @@ public class QuestionsHolder : MonoBehaviour
                     }
                 }
             }
-            if (skeleton == true && shotgun == true && dress == true && suit == true && jewelry == true)
+            if (ValueStorage.skeleton == true && ValueStorage.shotgun == true && ValueStorage.dress == true && ValueStorage.suit == true && ValueStorage.jewelry == true)
             {
-                ValueStorage.QuestionNum + 1;
+                ValueStorage.QuestionNum += 1;
             }
         }
             
@@ -195,34 +195,34 @@ public class QuestionsHolder : MonoBehaviour
         {
             if (ValueStorage.Player1Turn == true)
             {
-                if (string.Compare(Answer, "cabin/woods/camp") == 0 && cabin == false)
+                if (string.Compare(Answer, "cabin/woods/camp") == 0 && ValueStorage.cabin == false)
                 {
                     ValueStorage.Points1 += 1;
-                    cabin = true;
+                    ValueStorage.cabin = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "graveyard") == 0 && graveyard == false)
+                else if (string.Compare(Answer, "graveyard") == 0 && ValueStorage.graveyard == false)
                 {
                     ValueStorage.Points1 += 1;
-                    graveyard = true;
+                    ValueStorage.graveyard = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "basement") == 0 && basement == false)
+                else if (string.Compare(Answer, "basement") == 0 && ValueStorage.basement == false)
                 {
                     ValueStorage.Points1 += 1;
-                    basement = true;
+                    ValueStorage.basement = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "closet") == 0 && closet == false)
+                else if (string.Compare(Answer, "closet") == 0 && ValueStorage.closet == false)
                 {
                     ValueStorage.Points1 += 1;
-                    closet = true;
+                    ValueStorage.closet = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "shower") == 0 && shower == false)
+                else if (string.Compare(Answer, "shower") == 0 && ValueStorage.shower == false)
                 {
                     ValueStorage.Points1 += 1;
-                    shower = true;
+                    ValueStorage.shower = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -246,34 +246,34 @@ public class QuestionsHolder : MonoBehaviour
             }
             else if (ValueStorage.Player2Turn == true) // Player 2
             {
-                if (string.Compare(Answer, "cabin/woods/camp") == 0 && cabin == false)
+                if (string.Compare(Answer, "cabin/woods/camp") == 0 && ValueStorage.cabin == false)
                 {
                     ValueStorage.Points2 += 1;
-                    cabin = true;
+                    ValueStorage.cabin = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "graveyard") == 0 && graveyard == false)
+                else if (string.Compare(Answer, "graveyard") == 0 && ValueStorage.graveyard == false)
                 {
                     ValueStorage.Points2 += 1;
-                    graveyard = true;
+                    ValueStorage.graveyard = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "basement") == 0 && basement == false)
+                else if (string.Compare(Answer, "basement") == 0 && ValueStorage.basement == false)
                 {
                     ValueStorage.Points2 += 1;
-                    basement = true;
+                    ValueStorage.basement = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "closet") == 0 && closet == false)
+                else if (string.Compare(Answer, "closet") == 0 && ValueStorage.closet == false)
                 {
                     ValueStorage.Points2 += 1;
-                    closet = true;
+                    ValueStorage.closet = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "shower") == 0 && shower == false)
+                else if (string.Compare(Answer, "shower") == 0 && ValueStorage.shower == false)
                 {
                     ValueStorage.Points2 += 1;
-                    shower = true;
+                    ValueStorage.shower = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -295,9 +295,9 @@ public class QuestionsHolder : MonoBehaviour
                     }
                 }
             }
-            if (cabin == true && graveyard == true && basement == true && closet == true && shower == true)
+            if (ValueStorage.cabin == true && ValueStorage.graveyard == true && ValueStorage.basement == true && ValueStorage.closet == true && ValueStorage.shower == true)
             {
-                ValueStorage.QuestionNum + 1;
+                ValueStorage.QuestionNum += 1;
             }
         }
 
@@ -305,34 +305,34 @@ public class QuestionsHolder : MonoBehaviour
         {
             if (ValueStorage.Player1Turn == true)
             {
-                if (string.Compare(Answer, "legs") == 0 && legs == false)
+                if (string.Compare(Answer, "legs") == 0 && ValueStorage.legs == false)
                 {
                     ValueStorage.Points1 += 1;
-                    legs = true;
+                    ValueStorage.legs = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "lips") == 0 && lips == false)
+                else if (string.Compare(Answer, "lips") == 0 && ValueStorage.lips == false)
                 {
                     ValueStorage.Points1 += 1;
-                    lips = true;
+                    ValueStorage.lips = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "liver") == 0 && liver == false)
+                else if (string.Compare(Answer, "liver") == 0 && ValueStorage.liver == false)
                 {
                     ValueStorage.Points1 += 1;
-                    liver = true;
+                    ValueStorage.liver = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "lungs") == 0 && lungs == false)
+                else if (string.Compare(Answer, "lungs") == 0 && ValueStorage.lungs == false)
                 {
                     ValueStorage.Points1 += 1;
-                    lungs = true;
+                    ValueStorage.lungs = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "lateral cuneiform bone") == 0 && lCB == false)
+                else if (string.Compare(Answer, "lateral cuneiform bone") == 0 && ValueStorage.lCB == false)
                 {
                     ValueStorage.Points1 += 1;
-                    lCB = true;
+                    ValueStorage.lCB = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -356,34 +356,34 @@ public class QuestionsHolder : MonoBehaviour
             }
             else if (ValueStorage.Player2Turn == true) // Player 2
             {
-                if (string.Compare(Answer, "legs") == 0 && legs == false)
+                if (string.Compare(Answer, "legs") == 0 && ValueStorage.legs == false)
                 {
                     ValueStorage.Points2 += 1;
-                    legs = true;
+                    ValueStorage.legs = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "lips") == 0 && lips == false)
+                else if (string.Compare(Answer, "lips") == 0 && ValueStorage.lips == false)
                 {
                     ValueStorage.Points2 += 1;
-                    lips = true;
+                    ValueStorage.lips = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "liver") == 0 && liver == false)
+                else if (string.Compare(Answer, "liver") == 0 && ValueStorage.liver == false)
                 {
                     ValueStorage.Points2 += 1;
-                    liver = true;
+                    ValueStorage.liver = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "lungs") == 0 && lungs == false)
+                else if (string.Compare(Answer, "lungs") == 0 && ValueStorage.lungs == false)
                 {
                     ValueStorage.Points2 += 1;
-                    lungs = true;
+                    ValueStorage.lungs = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "lateral cuneiform bone") == 0 && lCB == false)
+                else if (string.Compare(Answer, "lateral cuneiform bone") == 0 && ValueStorage.lCB == false)
                 {
                     ValueStorage.Points2 += 1;
-                    lCB = true;
+                    ValueStorage.lCB = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -405,9 +405,9 @@ public class QuestionsHolder : MonoBehaviour
                     }
                 }
             }
-            if (legs == true && lips == true && lungs == true && liver == true && lCB == true)
+            if (ValueStorage.legs == true && ValueStorage.lips == true && ValueStorage.lungs == true && ValueStorage.liver == true && ValueStorage.lCB == true)
             {
-                ValueStorage.QuestionNum + 1;
+                ValueStorage.QuestionNum += 1;
             }
         }
 
@@ -415,34 +415,34 @@ public class QuestionsHolder : MonoBehaviour
         {
             if (ValueStorage.Player1Turn == true)
             {
-                if (string.Compare(Answer, "hair") == 0 && hair == false)
+                if (string.Compare(Answer, "hair") == 0 && ValueStorage.hair == false)
                 {
                     ValueStorage.Points1 += 1;
-                    hair = true;
+                    ValueStorage.hair = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "friends") == 0 && friends == false)
+                else if (string.Compare(Answer, "friends") == 0 && ValueStorage.friends == false)
                 {
                     ValueStorage.Points1 += 1;
-                    friends = true;
+                    ValueStorage.friends = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "personality") == 0 && personality == false)
+                else if (string.Compare(Answer, "personality") == 0 && ValueStorage.personality == false)
                 {
                     ValueStorage.Points1 += 1;
-                    personality = true;
+                    ValueStorage.personality = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "height") == 0 && height == false)
+                else if (string.Compare(Answer, "height") == 0 && ValueStorage.height == false)
                 {
                     ValueStorage.Points1 += 1;
-                    height = true;
+                    ValueStorage.height = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "humor") == 0 && humor == false)
+                else if (string.Compare(Answer, "humor") == 0 && ValueStorage.humor == false)
                 {
                     ValueStorage.Points1 += 1;
-                    humor = true;
+                    ValueStorage.humor = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -466,34 +466,34 @@ public class QuestionsHolder : MonoBehaviour
             }
             else if (ValueStorage.Player2Turn == true) // Player 2
             {
-                if (string.Compare(Answer, "hair") == 0 && hair == false)
+                if (string.Compare(Answer, "hair") == 0 && ValueStorage.hair == false)
                 {
                     ValueStorage.Points2 += 1;
-                    hair = true;
+                    ValueStorage.hair = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "friends") == 0 && friends == false)
+                else if (string.Compare(Answer, "friends") == 0 && ValueStorage.friends == false)
                 {
                     ValueStorage.Points2 += 1;
-                    friends = true;
+                    ValueStorage.friends = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "personality") == 0 && personality == false)
+                else if (string.Compare(Answer, "personality") == 0 && ValueStorage.personality == false)
                 {
                     ValueStorage.Points2 += 1;
-                    personality = true;
+                    ValueStorage.personality = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "humor") == 0 && humor == false)
+                else if (string.Compare(Answer, "humor") == 0 && ValueStorage.humor == false)
                 {
                     ValueStorage.Points2 += 1;
-                    humor = true;
+                    ValueStorage.humor = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
-                else if (string.Compare(Answer, "height") == 0 && height == false)
+                else if (string.Compare(Answer, "height") == 0 && ValueStorage.height == false)
                 {
                     ValueStorage.Points2 += 1;
-                    height = true;
+                    ValueStorage.height = true;
                     SceneManager.LoadScene(14); // happy bald man
                 }
                 else
@@ -515,9 +515,229 @@ public class QuestionsHolder : MonoBehaviour
                     }
                 }
             }
-            if (legs == true && lips == true && lungs == true && liver == true && lCB == true)
+            if (ValueStorage.legs == true && ValueStorage.lips == true && ValueStorage.lungs == true && ValueStorage.liver == true && ValueStorage.lCB == true)
             {
-                ValueStorage.QuestionNum + 1;
+                ValueStorage.QuestionNum += 1;
+            }
+        }
+
+        if (ValueStorage.QuestionNum == 5)
+        {
+            if (ValueStorage.Player1Turn == true)
+            {
+                if (string.Compare(Answer, "money") == 0 && ValueStorage.money == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.hair = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "car") == 0 && ValueStorage.car == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.friends = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "vacations") == 0 && ValueStorage.vacations == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.personality = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "appliances") == 0 && ValueStorage.appliances == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.height = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "dignity") == 0 && ValueStorage.dignity == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.humor = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (ValueStorage.Xcount1 == 0)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (ValueStorage.Xcount1 == 1)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (ValueStorage.Xcount1 == 2)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(6);
+                    }
+                }
+            }
+            else if (ValueStorage.Player2Turn == true) // Player 2
+            {
+                if (string.Compare(Answer, "hair") == 0 && ValueStorage.money == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.money = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "friends") == 0 && ValueStorage.car == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.car = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "personality") == 0 && ValueStorage.vacations == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.vacations = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "humor") == 0 && ValueStorage.appliances == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.appliances = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "height") == 0 && ValueStorage.dignity == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.dignity = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (ValueStorage.Xcount2 == 0)
+                    {
+                        ValueStorage.Xcount2 += 1;
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (ValueStorage.Xcount2 == 1)
+                    {
+                        ValueStorage.Xcount2 += 1;
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (ValueStorage.Xcount2 == 2)
+                    {
+                        ValueStorage.Xcount2 += 1;
+                        SceneManager.LoadScene(6);
+                    }
+                }
+            }
+            if (ValueStorage.money == true && ValueStorage.car == true && ValueStorage.vacations == true && ValueStorage.appliances == true && ValueStorage.dignity == true)
+            {
+                ValueStorage.QuestionNum += 1;
+            }
+        }
+
+        if (ValueStorage.QuestionNum == 6)
+        {
+            if (ValueStorage.Player1Turn == true)
+            {
+                if (string.Compare(Answer, "dog") == 0 && ValueStorage.dog == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.dog = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "naked grandma") == 0 && ValueStorage.NakedGrandma == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.NakedGrandma = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "empty house") == 0 && ValueStorage.EmptyHouse == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.EmptyHouse = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "police officer") == 0 && ValueStorage.PoliceOfficer == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.PoliceOfficer = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "video camera") == 0 && ValueStorage.VideoCamera == false)
+                {
+                    ValueStorage.Points1 += 1;
+                    ValueStorage.VideoCamera = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (ValueStorage.Xcount1 == 0)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (ValueStorage.Xcount1 == 1)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (ValueStorage.Xcount1 == 2)
+                    {
+                        ValueStorage.Xcount1 += 1;
+                        SceneManager.LoadScene(6);
+                    }
+                }
+            }
+            else if (ValueStorage.Player2Turn == true) // Player 2
+            {
+                if (string.Compare(Answer, "dog") == 0 && ValueStorage.dog == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.dog = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "naked grandma") == 0 && ValueStorage.NakedGrandma == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.NakedGrandma = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "empty house") == 0 && ValueStorage.EmptyHouse == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.EmptyHouse = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "police officer") == 0 && ValueStorage.PoliceOfficer == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.PoliceOfficer = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else if (string.Compare(Answer, "video camera") == 0 && ValueStorage.VideoCamera == false)
+                {
+                    ValueStorage.Points2 += 1;
+                    ValueStorage.VideoCamera = true;
+                    SceneManager.LoadScene(14); // happy bald man
+                }
+                else
+                {
+                    if (ValueStorage.Xcount2 == 0)
+                    {
+                        ValueStorage.Xcount2 += 1;
+                        SceneManager.LoadScene(4); // x1 scene
+                    }
+                    else if (ValueStorage.Xcount2 == 1)
+                    {
+                        ValueStorage.Xcount2 += 1;
+                        SceneManager.LoadScene(5);
+                    }
+                    else if (ValueStorage.Xcount2 == 2)
+                    {
+                        ValueStorage.Xcount2 += 1;
+                        SceneManager.LoadScene(6);
+                    }
+                }
+            }
+            if (ValueStorage.dog == true && ValueStorage.NakedGrandma == true && ValueStorage.EmptyHouse == true && ValueStorage.PoliceOfficer == true && ValueStorage.VideoCamera == true)
+            {
+                ValueStorage.QuestionNum += 1;
             }
         }
     }
